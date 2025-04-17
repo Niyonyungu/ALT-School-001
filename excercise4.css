@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin: 0px auto;
+}
+
+.left-section {
+    flex: 1;
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #ff7e00, #46c3b9, #ffcc00, #75c153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 12px;
+    position: relative;
+}
+
+.logo-icon::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 12px;
+    left: 10px;
+}
+
+.left-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.left-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.right-section {
+    flex: 1.5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px 0 0 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #46c3b9;
+}
+
+.register-btn {
+    background-color: #46c3b9;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.register-btn:hover {
+    background-color: #3baea3;
+}
+
+.terms {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.terms a {
+    color: #46c3b9;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #999;
+    cursor: pointer;
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #999;
+}
